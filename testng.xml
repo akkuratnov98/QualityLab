@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Авторизация на Mail.ru и отправка письма">
+        <parameter name="login" value="akkuratnov@internet.ru"/>
+        <parameter name="password" value="QualityLab"/>
+        <parameter name="toLogin" value="akkuratnov98@mail.ru"/>
+        <parameter name="subjectMail" value="Тема письма"/>
+        <parameter name="textMail" value="Текст письма"/>
+        <classes>
+            <class name="Main.Tests.TestLogInPage"/>
+        </classes>
+    </test>
+</suite>
